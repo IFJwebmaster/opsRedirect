@@ -10,9 +10,13 @@ if ($host == "operations"){
    header("HTTP/1.1 301 Moved Permanently" ); 
    header("Location: https://illinoisfirejuniors.sharepoint.com/sites/group.operations/SitePages/Home.aspx"); 
 }
-if ($host == "ambassadors" || $host = "ambassador"){ 
+elseif ($host == "ambassadors" || $host == "ambassador"){ 
     header("HTTP/1.1 301 Moved Permanently" ); 
     header("Location: https://illinoisfirejuniors.sharepoint.com/sites/ambassadors"); 
+ }
+ elseif ($host == "register"){ 
+    header("HTTP/1.1 301 Moved Permanently" ); 
+    header("Location: https://illinoisfirejuniors.sportngin.com/register/form/633120784"); 
  }
 else {
     header("HTTP/1.1 302 Temporarily Permanently" ); 
